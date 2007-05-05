@@ -2,7 +2,7 @@
 
 Name:           perl-%{realname}
 Version:        2.09
-Release:        1mdk
+Release:        %mkrel 2
 License:        GPL or Artistic
 Group:          Development/Perl
 Summary:        Unicode-String module for perl
@@ -11,7 +11,6 @@ Url:            http://search.cpan.org/dist/%{realname}/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  perl-devel >= 5.8.0
 Requires:       perl
-
 
 %description
 These are experimental modules to handle various Unicode issues.  They
@@ -22,6 +21,8 @@ were made before perl included native UTF8 support.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
+
+%check
 make test
 
 %install
