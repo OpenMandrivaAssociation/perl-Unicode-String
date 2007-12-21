@@ -8,6 +8,7 @@ Group:          Development/Perl
 Summary:        Unicode-String module for perl
 Source0:        ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/%{realname}-%{version}.tar.bz2
 Url:            http://search.cpan.org/dist/%{realname}/
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  perl-devel >= 5.8.0
 Requires:       perl
 
