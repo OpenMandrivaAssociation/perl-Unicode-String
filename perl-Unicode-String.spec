@@ -2,7 +2,7 @@
 
 Name:           perl-%{realname}
 Version:        2.09
-Release:        %mkrel 4
+Release:        %mkrel 5
 License:        GPL or Artistic
 Group:          Development/Perl
 Summary:        Unicode-String module for perl
