@@ -1,15 +1,18 @@
-%define realname        Unicode-String
+%define upstream_name    Unicode-String
+%define upstream_version 2.09
 
-Name:           perl-%{realname}
-Version:        2.09
-Release:        %mkrel 5
-License:        GPL or Artistic
-Group:          Development/Perl
+Name:           perl-%{upstream_name}
+Version:        %perl_convert_version %{upstream_version}
+Release:        %mkrel 1
+
 Summary:        Unicode-String module for perl
-Source0:        ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/%{realname}-%{version}.tar.bz2
-Url:            http://search.cpan.org/dist/%{realname}/
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+License:        GPL+ or Artistic
+Group:          Development/Perl
+Url:            http://search.cpan.org/dist/%{upstream_name}/
+Source0:        ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:  perl-devel >= 5.8.0
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 Requires:       perl
 
 %description
@@ -17,7 +20,7 @@ These are experimental modules to handle various Unicode issues.  They
 were made before perl included native UTF8 support.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -38,4 +41,3 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/auto/Unicode/String
 %{perl_vendorarch}/Unicode/*.pm
 %{_mandir}/*/*
-
