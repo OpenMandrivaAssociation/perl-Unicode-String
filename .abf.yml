@@ -1,2 +1,4 @@
+removed_sources:
+  Unicode-String-2.09.tar.bz2: 05e9c78e5ecc0732e0ffe3fb3b51f7075167e004
 sources:
-  "Unicode-String-2.09.tar.bz2": 05e9c78e5ecc0732e0ffe3fb3b51f7075167e004
+  Unicode-String-2.10.tar.gz: 24834f6155adf070204c56f9ddae01aab485a287

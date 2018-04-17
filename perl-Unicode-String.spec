@@ -1,15 +1,17 @@
 %define modname	Unicode-String
-%define modver	2.09
+%define modver	2.10
 
 Summary:	Unicode-String module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	17
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/%{modname}-%{modver}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/%{modname}-%{modver}.tar.gz
 BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-Test-Base
+BuildRequires:	perl-Test
 Requires:	perl
 
 %description
