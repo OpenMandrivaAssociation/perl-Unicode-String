@@ -7,7 +7,7 @@ Version:	2.10
 Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/%{modname}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	perl-Test-Base
