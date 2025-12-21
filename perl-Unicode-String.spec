@@ -9,6 +9,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/%{modname}-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	perl-Test-Base
 BuildRequires:	perl-Test
